@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#calculator-app {
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.09);
+}
+
+.disp {
+    display: block;
+    height: 100px;
+    width: 250px;
+    display: grid;
+    place-items: end end;
+    font-size: 2em;
+}
+
+.body {
+    display: grid;
+    grid-template: repeat(5, 50px) / repeat(4, 1fr);
+}
+
+.btn {
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #ccc;
+}
