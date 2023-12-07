@@ -8,11 +8,14 @@
     height: 100vh;
     display: grid;
     place-items: center;
+    background: lightcyan;
 }
 
 #calculator-app {
     border-radius: 10px;
-    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.09);
+    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.2);
+    padding: 15px;
+    background: #fff;
 }
 
 .disp {
@@ -22,19 +25,80 @@
     display: grid;
     place-items: end end;
     font-size: 2em;
+    color: #fff;
+    background: #333;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 .body {
     display: grid;
     grid-template: repeat(5, 50px) / repeat(4, 1fr);
+    gap: 8px;
+
 }
 
 .btn {
     display: grid;
     place-items: center;
     cursor: pointer;
+    user-select: none;
+    border-radius: 8px;
+    background: #eee;
 }
 
 .btn:hover {
     background: #ccc;
+}
+
+.digit {
+    font-size: 1.4em;
+}
+
+.eql {
+    grid-row: 4 / 6;
+    grid-column: 4 /5;
+    background: orange;
+    font-size: 1.4em;
+    font-weight: 800;
+    color: #fff;
+}
+
+.digit-7, .digit-8, .digit-9 {
+    grid-row: 2 / 3;
+}
+
+.digit-4, .digit-5, .digit-6 {
+    grid-row: 3 / 4;
+}
+
+.digit-1, .digit-2, .digit-3 {
+    grid-row: 4 / 5;
+}
+
+.digit-0 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+}
+
+.decimal {
+    grid-row: 5 / 6;
+    grid-column: 3 / 4;
+}
+
+.ac, .bksp {
+    grid-column: 4 / 5;
+}
+
+.ac {
+    grid-row: 2 / 3;
+}
+
+.bksp {
+    grid-row: 3 / 4;
+}
+
+.divide {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
 }
